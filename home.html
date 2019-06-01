@@ -138,10 +138,35 @@ img.emoji {
       <!-- Example taken from https://bl.ocks.org/d3noob/43a860bc0024792f8803bba8ca0d5ecd -->
       <script type="text/javascript" src="d3.min.js"></script>
       <script src="https://d3js.org/d3.v5.min.js"></script>
+	  
+  	<script type="text/javascript">
+  		function saveUserClicks() {		
+  			$.ajax({
+  			  type: "POST",
+  			  url: "savesettings.php",
+  			  data: {clickpath: clickpath,},
+  			  dataType: "JSON",
+  			  success: function() {
+  					  return null;
+  				  }
+  			});
+  		};
+		
+		// for cross-browser compatibility, placing both `onunload` and `onbeforeunload` 
+		// in the body tag. To prevent from calling twice, track whether already fired
+  		var app = {};
+  		app.unloaded = false;
+  		app.unload = function() {
+  			if (app.unloaded) return; else app.unloaded = true;
+  			saveUserClicks();
+  			return null;
+  		};
+  	</script>
+		
 </head>
 	
 
-<body class="page page-id-4 page-template-default">
+<body class="page page-id-4 page-template-default" onunload="return app.unload();" onbeforeunload="return app.unload();">
     <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
     <script type="text/javascript" src="https://cdn.vanderbilt.edu/vu-www4/brandbar/brandbar-school.js">//</script>
 <div id="anchordown">
@@ -193,32 +218,10 @@ img.emoji {
 		  .attr("height", height + margin.top + margin.bottom); 
 		  
 	  // Track clicks 
-	  var pathexpand = '';
-	  var pathcollapse = '';
+	  var clickpath = '';
 	</script>
 	
 	<script type="text/javascript" src="tree_styling.js"></script>
-	
-	<script>
-		function saveUserClicks() {		
-			$.ajax({
-			  type: "POST",
-			  url: "savesettings.php",
-			  data: {pathexpand: pathexpand,
-					 pathcollapse: pathcollapse,},
-			  dataType: "JSON",
-			  success: function() {
-					  return null;
-				  }
-			});
-		};
-		
-		window.onbeforeunload = function() {
-			saveUserClicks();
-			return null;
-		}
-	</script>
-
 			
 </div>
 </article>
