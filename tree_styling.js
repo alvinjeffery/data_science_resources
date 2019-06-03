@@ -122,14 +122,27 @@
         .append('text')
             .attr("dy", ".35em")
             .attr("x", function(d) {
-                return d.children || d._children ? -13 : 13;
+                return d.children || d._children ? -13 : 35;
             })
             .attr("text-anchor", function(d) {
                 return d.children || d._children ? "end" : "start";
             })
-            .text(function(d) { return d.data.name; })
-            .call(wrap, 175);
-            
+            .text(function(d) { 
+				return d.children || d._children ? d.data.name : d.data.name;
+			})
+            .call(wrap, 175);	
+	
+	// Add image to terminal node to help user know it opens a new window
+	nodeEnter
+		.append("image")
+			.attr('x', 15)
+			.attr('y', -10)
+			.attr('width', 15)
+			.attr('height', 15)
+			.attr("xlink:href", function(d) {
+				return d.children || d._children ? null : "up_right_arrow.png";
+			});
+		
     // Define the div for the tooltip
     var div = d3.select("body").append("div")	
         .attr("class", "tooltip")				

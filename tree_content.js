@@ -14,27 +14,29 @@
          ]
         },
         { // 2nd level
-         "name": "graph",
+         "name": "Brief Reads",
          "children": [
-          {"name": "BetweennessCentrality", "url": "https://www.google.com"},
-          {"name": "SpanningTree", "url": "https://www.google.com"}
+          {"name": "Data Science for Beginners", "comment": "Posted in TowardDataScience, which contains many helpful blogs & tutorials", "url": "https://towardsdatascience.com/data-science-for-beginners-850c3376a34a"},
+          {"name": "What is Data Science?", "comment": "More comprehensive overview, including history, examples, & contemporary concepts", "url": "https://www.thinkful.com/blog/what-is-data-science/"}
          ]
         }
        ]
       },
       { // TOP level
-       "name": "I want to learn specific Data Science skills",
+       "name": "Learn Specific Data Science Skills",
        "comment": "For acquiring specific skills like SQL queries or Python programming",
        "children": [
         { // 2nd level
          "name": "SQL (database queries)",
+		 "comment": "Learn how to collect/retrieve data from databases",
          "children": [
-          {"name": "Coursera***", "url": "***"},
-          {"name": "W3Schools", "url": "***"}
+          {"name": "Coursera", "comment": "Multiple courses for learning SQL", "url": "https://www.coursera.org/courses?query=sql&indices%5Bprod_all_products_custom_ranking_revenuelast28d%5D%5BrefinementList%5D%5Bskills%5D%5B0%5D=Sql&indices%5Bprod_all_products_custom_ranking_revenuelast28d%5D%5Bpage%5D=1&indices%5Bprod_all_products_custom_ranking_revenuelast28d%5D%5Bconfigure%5D%5BclickAnalytics%5D=true&indices%5Bprod_all_products_custom_ranking_revenuelast28d%5D%5Bconfigure%5D%5BhitsPerPage%5D=10&configure%5BclickAnalytics%5D=true"},
+          {"name": "W3Schools", "comment": "Free, self-paced tutorials with practice examples", "url": "https://www.w3schools.com/sql/default.asp"}
          ]
         },
         { // 2nd level
          "name": "Conferences",
+		 "comment": "Many informatics-focused conferences now offer workshops to help learn data science skills",
          "children": [
           {"name": "Nursing Knowledge: Big Data Science", "url": "https://www.nursing.umn.edu/centers/center-nursing-informatics/news-events/2019-nursing-knowledge-big-data-science-conference"},
           {"name": "Open Data Science", "url": "https://odsc.com/"}, 
@@ -55,7 +57,7 @@
        ]
       },
       { // TOP level
-          "name": "I want to become a Data Scientist",
+          "name": "Become a Data Scientist",
           "comment": "For those wanting to pursue a full program", 
           "children": [
               { // 2nd level
