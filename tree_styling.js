@@ -59,7 +59,7 @@
             var info = g.append('text')
                .classed('info', true)
                .attr('x', -75)
-               .attr('y', -50)
+               .attr('y', 30)
                .text(d.data.comment)
                .style('font-style', 'italic')
                .call(wrap, 200);
