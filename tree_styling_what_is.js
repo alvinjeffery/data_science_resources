@@ -1,4 +1,5 @@
 
+  var svg = svg3
 
   var i = 0,
       duration = 750,
