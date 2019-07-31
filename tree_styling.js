@@ -1,4 +1,5 @@
 
+  var svg = svg2
 
   var i = 0,
       duration = 750,
@@ -236,11 +237,11 @@
       if (d.children) {
           d._children = d.children;
           d.children = null;
-		  clickpath += '(-)' + d.data.name + ';';
+		  //clickpath += '(-)' + d.data.name + ';';
         } else {
           d.children = d._children;
           d._children = null;
-		  clickpath += '(+)' + d.data.name + ';';
+		  //clickpath += '(+)' + d.data.name + ';';
         }
       update(d);
     }

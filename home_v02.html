@@ -170,9 +170,9 @@ img#wpstats {
           <!-- Navigation pane -->
           <ul class="nav nav-tabs">
             <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#why-data-science">Why Data Science?</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#what-data-science">What is Data Science?</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#d3-holder">Learn Specific Skills</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#become-data-scientist">Become a Data Scientist</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#d3-holder-what-is">What is Data Science?</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#d3-holder-specific-skills">Learn Specific Skills</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#d3-holder-become-data-scientist">Become a Data Scientist</a></li>
             <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#drop" role="button" aria-haspopup="true" aria-expanded="false">About Me</a>
               <div class="dropdown-menu"> <a class="dropdown-item" href="http://www.quantitativenurse.com" target="_blank">Dr. Jeffery's Lab Website</a>
                 <div class="dropdown-divider"></div>
@@ -182,66 +182,105 @@ img#wpstats {
 		  <!-- Main content box -->
           <article class="primary-content col-sm-12">
             <div class = "tab-content">
-			  <!-- Become a Data Scientist -->
-              <div class="panel-body tab-pane" id="become-data-scientist">
-                <p>Content goes here</p>
-              </div>
-			  <!-- What is Data Sciencet -->
-              <div class="panel-body tab-pane" id="what-data-science">
-                <p>Content goes here</p>
-              </div>
+				
 			  <!-- Why Data Science -->
-              <div class="panel-body tab-pane active" id="why-data-science">
-                <div id="accordion1" role="tablist">
-                  <div class="card">
-                    <div class="card-header" role="tab" id="headingOne1">
-                      <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1">Electronic Health Records</a> </h5>
-                    </div>
-                    <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion1">
-                      <div class="card-body">EHR content examples</div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" role="tab" id="headingTwo1">
-                      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button" aria-expanded="false" aria-controls="collapseTwo1">Predictive Analytics</a> </h5>
-                    </div>
-                    <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion1">
-                      <div class="card-body">Example for Predictive Analytics</div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" role="tab" id="headingThree1">
-                      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1">Staffing </a> </h5>
-                    </div>
-                    <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion1">
-                      <div class="card-body">Content for Staffing</div>
-                    </div>
-                  </div>
-                </div>
+	            <div class="panel-body tab-pane active" id="why-data-science">
+	              <div id="accordion1" role="tablist">
+	                <div class="card">
+	                  <div class="card-header" role="tab" id="headingOne1">
+	                    <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1">Electronic Health Records</a> </h5>
+	                  </div>
+	                  <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion1">
+	                    <div class="card-body">EHR content examples</div>
+	                  </div>
+	                </div>
+	                <div class="card">
+	                  <div class="card-header" role="tab" id="headingTwo1">
+	                    <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button" aria-expanded="false" aria-controls="collapseTwo1">Predictive Analytics</a> </h5>
+	                  </div>
+	                  <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion1">
+	                    <div class="card-body">Example for Predictive Analytics</div>
+	                  </div>
+	                </div>
+	                <div class="card">
+	                  <div class="card-header" role="tab" id="headingThree1">
+	                    <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1">Staffing </a> </h5>
+	                  </div>
+	                  <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion1">
+	                    <div class="card-body">Content for Staffing</div>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+			
+			  <!-- Become a Data Scientist -->
+              <div class="panel-body tab-pane" id="d3-holder-become-data-scientist">
+                <h1 class="pagetitle">Learn Specific Data Science Skills</h1>
+                <p>This site is intended to connect you to existing resources to learn (1) <b>about data science</b>, (2) <b>data science skills</b>, or (3) <b>how to become a data scientist</b>.</p>
+                <p>Expand & explore the options that interest you...</p>
+                <script type="text/javascript" src="tree_content_become_data_scientist.js"></script>
+                <script>
+				  // Set the dimensions and margins of the diagram
+				  var margin = {top: 20, right: 90, bottom: 30, left: 90},
+					  width = 960 - margin.left - margin.right,
+					  height = 600 - margin.top - margin.bottom;
+
+				  // append the svg object to the body of the page
+				  // appends a 'group' element to 'svg'
+				  // moves the 'group' element to the top left margin
+				  var svg1 = d3.select("#d3-holder-become-data-scientist").append("svg")
+					  .attr("width", width + margin.right + margin.left)
+					  .attr("height", height + margin.top + margin.bottom); 
+		  
+				  // Track clicks 
+				  //var clickpath = '';
+				</script>
+                <script type="text/javascript" src="tree_styling_become_data_scientist.js"></script>
               </div>
+
 			  <!-- Resources -->
-              <div class="panel-body tab-pane" id="d3-holder">
-                <h1 class="pagetitle">Resources for Nurses Informaticists</h1>
+              <div class="panel-body tab-pane" id="d3-holder-specific-skills">
+                <h1 class="pagetitle">Learn Specific Data Science Skills</h1>
                 <p>This site is intended to connect you to existing resources to learn (1) <b>about data science</b>, (2) <b>data science skills</b>, or (3) <b>how to become a data scientist</b>.</p>
                 <p>Expand & explore the options that interest you...</p>
                 <script type="text/javascript" src="tree_content_specific_skills.js"></script>
                 <script>
-	  // Set the dimensions and margins of the diagram
-	  var margin = {top: 20, right: 90, bottom: 30, left: 90},
-		  width = 960 - margin.left - margin.right,
-		  height = 600 - margin.top - margin.bottom;
+				  // Set the dimensions and margins of the diagram
+				  var margin = {top: 20, right: 90, bottom: 30, left: 90},
+					  width = 960 - margin.left - margin.right,
+					  height = 600 - margin.top - margin.bottom;
 
-	  // append the svg object to the body of the page
-	  // appends a 'group' element to 'svg'
-	  // moves the 'group' element to the top left margin
-	  var svg = d3.select("#d3-holder").append("svg")
-		  .attr("width", width + margin.right + margin.left)
-		  .attr("height", height + margin.top + margin.bottom); 
+				  // append the svg object to the body of the page
+				  // appends a 'group' element to 'svg'
+				  // moves the 'group' element to the top left margin
+				  var svg2 = d3.select("#d3-holder-specific-skills").append("svg")
+					  .attr("width", width + margin.right + margin.left)
+					  .attr("height", height + margin.top + margin.bottom); 
 		  
-	  // Track clicks 
-	  var clickpath = '';
-	</script>
+				  // Track clicks 
+				  //var clickpath = '';
+				</script>
                 <script type="text/javascript" src="tree_styling.js"></script>
+              </div>
+			  
+			  <!-- What is Data Science -->
+              <div class="panel-body tab-pane" id="d3-holder-what-is">
+			  	<h1 class="pagetitle">What is Data Science?</h1>
+			    <p>This site is intended to connect you to existing resources to learn (1) <b>about data science</b>, (2) <b>data science skills</b>, or (3) <b>how to become a data scientist</b>.</p>
+			    <p>Expand & explore the options that interest you...</p>
+			    <script type="text/javascript" src="tree_content_what_is.js"></script>
+			    <script>
+					  var margin = {top: 20, right: 90, bottom: 30, left: 90},
+						  width = 960 - margin.left - margin.right,
+						  height = 600 - margin.top - margin.bottom;
+
+					  var svg3 = d3.select("#d3-holder-what-is").append("svg")
+						  .attr("width", width + margin.right + margin.left)
+						  .attr("height", height + margin.top + margin.bottom); 
+  
+					  //var clickpath = '';
+					</script>
+			  	<script type="text/javascript" src="tree_styling_what_is.js"></script>
               </div>
             </div>
           </article>
