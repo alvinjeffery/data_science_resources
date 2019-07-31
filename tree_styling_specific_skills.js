@@ -1,19 +1,19 @@
-var i1 = 0,
-    duration1 = 750,
-    root1;
+var i2 = 0,
+    duration2 = 750,
+    root2;
 
 // declares a tree layout and assigns the size
-var treemap1 = d3.tree().size([height, width]);
+var treemap2 = d3.tree().size([height, width]);
 
 // Assigns parent, children, height, depth
-root1 = d3.hierarchy(bdsTreeData, function(d) { return d.children; });
-root1.x0 = height / 2;
-root1.y0 = 0;
+root2 = d3.hierarchy(ssTreeData, function(d) { return d.children; });
+root2.x0 = height / 2;
+root2.y0 = 0;
 
 // Collapse after the second level
-root1.children.forEach(collapse);
+root2.children.forEach(collapse);
 
-update1(root1);
+update2(root2);
 
 // Collapse the node and all it's children
 function collapse(d) {
@@ -24,14 +24,14 @@ function collapse(d) {
     }
 }
 
-function update1(source) {
+function update2(source) {
 
     // Assigns the x and y position for the nodes
-    var bdsTreeData = treemap1(root1);
+    var ssTreeData = treemap2(root2);
 
     // Compute the new tree layout.
-    var nodes = bdsTreeData.descendants(),
-        links = bdsTreeData.descendants().slice(1);
+    var nodes = ssTreeData.descendants(),
+        links = ssTreeData.descendants().slice(1);
 
     // Normalize for fixed-depth.
     nodes.forEach(function(d) { d.y = d.depth * 180 });
@@ -39,8 +39,8 @@ function update1(source) {
     // ****************** Nodes section ***************************
 
     // Update the nodes...
-    var node = svg1.selectAll('g.node')
-        .data(nodes, function(d) { return d.id || (d.id = ++i1); });
+    var node = svg2.selectAll('g.node')
+        .data(nodes, function(d) { return d.id || (d.id = ++i2); });
 
     // Enter any new modes at the parent's previous position.
     var nodeEnter = node.enter().append('g')
@@ -150,7 +150,7 @@ function update1(source) {
 
     // Transition to the proper position for the node
     nodeUpdate.transition()
-        .duration(duration1)
+        .duration(duration2)
         .attr("transform", function(d) {
             return "translate(" + d.y + "," + d.x + ")";
         });
@@ -166,7 +166,7 @@ function update1(source) {
 
     // Remove any exiting nodes
     var nodeExit = node.exit().transition()
-        .duration(duration1)
+        .duration(duration2)
         .attr("transform", function(d) {
             return "translate(" + source.y + "," + source.x + ")";
         })
@@ -183,7 +183,7 @@ function update1(source) {
     // ****************** links section ***************************
 
     // Update the links...
-    var link = svg1.selectAll('path.link')
+    var link = svg2.selectAll('path.link')
         .data(links, function(d) { return d.id; });
 
     // Enter any new links at the parent's previous position.
@@ -199,12 +199,12 @@ function update1(source) {
 
     // Transition back to the parent element position
     linkUpdate.transition()
-        .duration(duration1)
+        .duration(duration2)
         .attr('d', function(d) { return diagonal(d, d.parent) });
 
     // Remove any exiting links
     var linkExit = link.exit().transition()
-        .duration(duration1)
+        .duration(duration2)
         .attr('d', function(d) {
             var o = { x: source.x, y: source.y }
             return diagonal(o, o)
@@ -239,6 +239,6 @@ function update1(source) {
             d._children = null;
             //clickpath += '(+)' + d.data.name + ';';
         }
-        update1(d);
+        update2(d);
     }
 }
