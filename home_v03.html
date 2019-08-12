@@ -177,8 +177,6 @@
 			/* symbol for "collapsed" panels */
 			content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 		}
-
-
     </style>
 
     <!-- Example taken from https://bl.ocks.org/d3noob/43a860bc0024792f8803bba8ca0d5ecd -->
@@ -250,18 +248,15 @@
                         </ul>
 						
                         <!-- Main content box -->
-                        <article class="primary-content col-sm-12">
-                            <div class="tab-content">
+						 <article class="primary-content col-sm-12">
+							<div class="tab-content">
 
-                                <!-- Why Data Science -->
-                                <div class = "container col-sm-12" id="why-data-science">  
-									<br></br>
-									<!-- Accordion styling code taken from https://codepen.io/tofanelli/pen/waadRY -->
-								  <div class="panel-body">
+								<!-- Why Data Science -->
+								<div class="panel-body tab-pane active" id="why-data-science">
 								  <div class="panel panel-default">
 									<div class="panel-heading">
 									  <h4 class="panel-title">
-										<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+										<a class="accordion-toggle" data-toggle="collapse" data-parent="#why-data-science" href="#collapseOne">
 										  Electronic Health Records
 										</a>
 									  </h4>
@@ -275,7 +270,7 @@
 								  <div class="panel panel-default">
 									<div class="panel-heading">
 									  <h4 class="panel-title">
-										<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+										<a class="accordion-toggle" data-toggle="collapse" data-parent="#why-data-science" href="#collapseTwo">
 										  Hospital Readmissions
 										</a>
 									  </h4>
@@ -289,7 +284,7 @@
 								  <div class="panel panel-default">
 									<div class="panel-heading">
 									  <h4 class="panel-title">
-										<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+										<a class="accordion-toggle" data-toggle="collapse" data-parent="#why-data-science" href="#collapseThree">
 										  Adverse Event Detection
 										</a>
 									  </h4>
@@ -300,7 +295,6 @@
 									  </div>
 									</div>
 								  </div>
-								</div>
 								</div>
 
                                 <!-- Become a Data Scientist -->
