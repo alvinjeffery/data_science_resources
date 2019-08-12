@@ -1,9 +1,6 @@
 var bdsTreeData = {
     "name": "Start",
-    "children": [{ // 2nd level
-        "name": "Become a Data Scientist",
-        "comment": "For those wanting to pursue a full program",
-        "children": [{ // 2nd level
+        "children": [{ // 1st level
                 "name": "Online",
                 "children": [
                     { "name": "Coursera (Multiple Courses & Specializations, Free or Paid)", "url": "https://www.coursera.org/courses?query=data%20science&" },
@@ -11,16 +8,16 @@ var bdsTreeData = {
                     { "name": "Data Quest (Paid)", "url": "https://www.dataquest.io" },
                 ]
             },
-            { // 2nd level
+            { // 1st level
                 "name": "In-Person",
-                "children": [{ // 3rd level
+                "children": [{ // 2nd level
                         "name": "Master's Degrees",
                         "children": [
                             { "name": "Vanderbilt University", "url": "https://www.vanderbilt.edu/datascience/" },
                             { "name": "University of Minnesota", "url": "https://datascience.umn.edu" },
                         ]
                     },
-                    { // 3rd level
+                    { // 2nd level
                         "name": "Immersion Experiences",
                         "children": [
                             { "name": "Data Incubator", "url": "https://www.thedataincubator.com" },
@@ -30,5 +27,4 @@ var bdsTreeData = {
                 ]
             }
         ]
-    }]
 }

@@ -1,9 +1,6 @@
 var ssTreeData = {
     "name": "Start",
-    "children": [{ // 2nd level
-        "name": "Learn Specific Skills",
-        "comment": "For acquiring specific skills like SQL queries or Python programming",
-        "children": [{ // 2nd level
+        "children": [{ // 1st level
                 "name": "Data Collection (SQL)",
                 "comment": "Learn how to collect/retrieve data from databases",
                 "children": [
@@ -14,10 +11,10 @@ var ssTreeData = {
                     { "name": "Software Carpentry", "comment": "Free, self-paced tutorial. Can be delivered as in-person workshop.", "url": "http://swcarpentry.github.io/sql-novice-survey/" },
                 ]
             },
-            { // 2nd level
-                "name": "Data Analysis (Theory & Programming)",
+            { // 1st level
+                "name": "Data Analysis",
                 "comment": "Learn how to anlyze data, develop models, make predictions, & visualize results",
-                "children": [{ // 3rd level
+                "children": [{ // 2nd level
                         "name": "Online - Coursera",
                         "comment": "An online learning environment with courses in many fields (not just data science) - can audit all courses for free",
                         "children": [
@@ -26,7 +23,7 @@ var ssTreeData = {
                             { "name": "Popular Data Science Courses", "comment": "2018's most popular courses, according to Coursera", "url": "https://www.coursera.org/collections/popular-data-science-courses-2018" },
                         ]
                     },
-                    { // 3rd level
+                    { // 2nd level
                         "name": "Online - Other",
                         "comment": "Free & paid online resources",
                         "children": [
@@ -39,7 +36,7 @@ var ssTreeData = {
 
                         ]
                     },
-                    { // 3rd level
+                    { // 2nd level
                         "name": "In-Person Workshops",
                         "comment": "Immersive experiences in a physical location",
                         "children": [
@@ -49,7 +46,7 @@ var ssTreeData = {
                     }
                 ]
             },
-            { // 2nd level
+            { // 1st level
                 "name": "Software",
                 "comment": "Commonly used software applications for data science",
                 "children": [
@@ -58,7 +55,7 @@ var ssTreeData = {
                     { "name": "Software Carpentry", "comment": "Free, self-paced tutorials for common software applications (e.g., Python, R, SQL, Git, command line)", "url": "https://software-carpentry.org" },
                 ]
             },
-            { // 2nd level
+            { // 1st level
                 "name": "Leading & Working on Teams",
                 "comment": "Contribute to data science projects, regardless of your theoretical or programming knowledge",
                 "children": [
@@ -67,11 +64,10 @@ var ssTreeData = {
                     { "name": "Data Science for Healthcare", "comment": "Healthcare-focused review of the role of data science", "url": "https://www.healthcatalyst.com/data-science-healthcare-what-leaders-must-know" },
                 ]
             },
-            { // 2nd level
+            { // 1st level
                 "name": "How to Learn Data Science (YouTube)",
                 "comment": "30-minute overview of general approach to learning data science (sponsored by DataQuest)",
                 "url": "https://www.youtube.com/watch?v=Ura_ioOcpQI"
             },
         ]
-    }]
 }
