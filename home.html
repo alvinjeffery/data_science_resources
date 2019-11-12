@@ -183,6 +183,9 @@
     <script src="d3.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script type="text/javascript">
+		// Track clicks
+		var clickpath = '';
+		
         function saveUserClicks() {
             $.ajax({
                 type: "POST",
