@@ -1,5 +1,5 @@
 # Data Science Resources
-This is a web site for listing data science learning resources.  You can see the working version at: <nursingdatascience.org>
+This is a web site for listing data science learning resources.  You can see the working version at: <www.nursingdatascience.org>
 
 *Target Audience:* Nurses & Nurse Informaticists  
 
