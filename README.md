@@ -1,9 +1,9 @@
 # Data Science Resources
-This is a web site for listing data science learning resources.  
+This is a web site for listing data science learning resources.  You can see the working version at: <nursingdatascience.org>
 
 *Target Audience:* Nurses & Nurse Informaticists  
 
-*Under Construction:* This project is part of my Alliance for Nursing Informatics Emerging Leader Program. The goals of the project are to:  
+This project is part of my Alliance for Nursing Informatics Emerging Leader Program. The goals of the project were to:  
 - Develop a website where users can discover resources that are unique to their interests/needs  
 - Connect interested users with existing data science resources  
 - Raise awareness of opportunities to learn more about data science  
