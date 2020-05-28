@@ -127,7 +127,7 @@ function update2(source) {
         .text(function(d) {
             return d.children || d._children ? d.data.name : d.data.name;
         })
-        .call(wrap, 175);
+        .call(wrap, 200);
 
     // Add image to terminal node to help user know it opens a new window
     nodeEnter

@@ -18,9 +18,10 @@ var ssTreeData = {
                         "name": "Online - Coursera",
                         "comment": "An online learning environment with courses in many fields (not just data science) - can audit all courses for free",
                         "children": [
-                            { "name": "Data Science Specialization (Johns Hopkins University)", "comment": "10-course (~8 months) comprehensive curriculum (R-based)", "url": "https://www.coursera.org/specializations/jhu-data-science" },
-                            { "name": "Data Science Specialization (University of Michigan)", "comment": "5-course (~5 months) introductory curriculum (Python-based)", "url": "https://www.coursera.org/specializations/data-science-python" },
                             { "name": "Popular Data Science Courses", "comment": "2018's most popular courses, according to Coursera", "url": "https://www.coursera.org/collections/popular-data-science-courses-2018" },
+							{ "name": "Data Science Specialization (Johns Hopkins Univ.)", "comment": "10-course (~8 months) comprehensive curriculum (R-based)", "url": "https://www.coursera.org/specializations/jhu-data-science" },
+                            { "name": "Data Science Specialization (Univ. of Michigan)", "comment": "5-course (~5 months) introductory curriculum (Python-based)", "url": "https://www.coursera.org/specializations/data-science-python" },
+                            { "name": "Clinical Data Science Specialization (Univ. of Colorado)", "comment": "6-course (~3 months) clinically-focused approach to learning data science (SQL & R-based)", "url": "https://www.learnclinicaldatascience.org" },
                         ]
                     },
                     { // 2nd level

@@ -19,6 +19,11 @@ var wiTreeData = {
             ]
         },
 		{ // 1st level
+			"name": "Machine Learning for Everyone",
+			"comment": "Uses simpler descriptions for MANY machine learning concepts - lengthy read",
+			"url": "https://vas3k.com/blog/machine_learning/"
+		},
+		{ // 1st level
             "name": "What is Data Science? (Coursera)",
             "comment": "6-hour course describing essential concepts - can audit for free",
             "url": "https://www.coursera.org/learn/what-is-datascience"
